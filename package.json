@@ -20,6 +20,16 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "prettier": "3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "stylelint": "^17.1.1",
+    "stylelint-config-clean-order": "^8.0.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-tailwindcss": "^1.0.1",
+    "stylelint-order": "^7.0.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
