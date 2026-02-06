@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./_theme.css";
+@import "./_typography.css";
+
+/* dark theme */
+@custom-variant dark (&:where(.dark, .dark *));
+
