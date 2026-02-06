@@ -1,0 +1,29 @@
+/* sizes */
+
+ @utility heading-h1 {
+  @apply text-3xl/[1.4] font-bold tracking-tighter ;
+ }
+
+@utility heading-h2 {
+  @apply text-2xl/[1.3];
+}
+
+@utility heading-h3 {
+  @apply text-xl/[1.3]
+}
+
+@utility text-base {
+  @apply text-lg/[1.4] ;
+}
+
+@utility text-paragraph {
+  @apply text-[1rem]/[1.4];
+}
+
+@utility text-small {
+  @apply text-xs/[1.3];
+}
+
+@utility text-subtle {
+  @apply text-[0.625rem]/[1.3];
+}

@@ -1,0 +1,43 @@
+@theme  {
+  /* accents */
+  --color-accent-blue: #1da1f2;
+  --color-accent-800: #fff1e6;
+  --background-image-accent-gradient: linear-gradient(129deg, #ff7000 0%, #e2985e 99.99%, #e2995f 100%);
+
+  /* dark */
+  --color-dark-100: #000;
+  --color-dark-200: #0f1117;
+  --color-dark-300: #151821;
+  --color-dark-400: #212734;
+  --color-dark-500: #3f4354;
+
+  /* light */
+  --color-light-400: #858ead;
+  --color-light-500: #7b8ec8;
+  --color-light-700: #dce3f1;
+  --color-light-800: #f4f6f8;
+  --color-light-850: #fdfdfd;
+  --color-light-900: #fff;
+  --light-border-color: rgb(200 203 217 / 33%);
+
+  /* links */
+  --color-link-100: var(--color-accent-blue);
+
+  /* shadows */
+  --shadow-light-100:
+          0px 12px 20px 0px rgb(184 184 184 / 3%),
+          0px 6px 12px 0px rgb(184 184 184 / 2%),
+          0px 2px 4px 0px rgb(184 184 184 / 3%);
+  --shadow-light-200: 10px 10px 20px 0px rgb(218 213 213 / 10%);
+  --shadow-light-300: -10px 10px 20px 0px rgb(218 213 213 / 10%);
+  --shadow-dark-100: 0px 2px 10px 0px rgb(46 52 56 / 10%);
+  --shadow-dark-200: 2px 0px 20px 0px rgb(39 36 36 / 4%);
+
+  /* breakpoints */
+  --breakpoint-xs: 26.25rem; /* 420px */
+
+
+  /* text letter-spacing */
+  --tracking-tighter: 0.03em;
+
+}
