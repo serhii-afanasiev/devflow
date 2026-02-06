@@ -5,9 +5,6 @@ const stylelintConfig = {
 
     // Tailwind-specific adjustments (must be AFTER standard)
     "stylelint-config-tailwindcss",
-
-    // Disable formatting rules handled by Prettier (always last)
-    "stylelint-config-prettier",
   ],
 
   ignoreFiles: ["**/*.js", "**/*.ts", "**/*.tsx"],
