@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 
+import Navbar from "@/components/navigation/navbar/navbar";
+
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -20,8 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
-        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
+      <body className={`${inter.className} bg-body antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

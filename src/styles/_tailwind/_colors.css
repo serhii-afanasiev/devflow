@@ -1,0 +1,11 @@
+@utility bg-navbar {
+  @apply bg-light-900 dark:bg-[#0f111780];
+}
+
+@utility bg-body {
+  @apply bg-light-850 dark:bg-dark-100;
+}
+
+@utility border-light {
+  @apply border-light-border;
+}
