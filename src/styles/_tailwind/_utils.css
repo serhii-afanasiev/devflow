@@ -1,3 +1,7 @@
 @utility flex-between {
   @apply flex justify-between items-center;
 }
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
