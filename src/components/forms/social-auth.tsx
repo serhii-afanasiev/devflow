@@ -15,7 +15,6 @@ function SocialAuthForm() {
     try {
       await signIn(provider, {
         redirectTo: ROUTES.HOME,
-        // redirect: false,
       });
     } catch (e) {
       console.log(e);
@@ -48,7 +47,7 @@ function SocialAuthForm() {
         variant="social"
         size="lg"
         className={btnClasses}
-        onClick={() => handleSignIn("github")}
+        onClick={() => handleSignIn("google")}
       >
         <Image src="/icons/google.svg" width={20} height={20} alt="Google Logo" />
         <span className="max-sm:hidden">Login with Google</span>
