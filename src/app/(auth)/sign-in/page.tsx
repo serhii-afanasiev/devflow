@@ -1,5 +1,7 @@
+import AuthSection from "@/components/auth/auth-section";
+
 function SignIn() {
-  return <div>Sign In</div>;
+  return <AuthSection title="Sign in">FORM</AuthSection>;
 }
 
 export default SignIn;

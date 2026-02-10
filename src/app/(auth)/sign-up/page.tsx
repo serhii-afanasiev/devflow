@@ -1,5 +1,7 @@
+import AuthSection from "@/components/auth/auth-section";
+
 function SignUp() {
-  return <div>Sign Up</div>;
+  return <AuthSection title="Create your account">FORM</AuthSection>;
 }
 
 export default SignUp;

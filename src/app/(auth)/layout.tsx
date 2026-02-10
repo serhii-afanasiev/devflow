@@ -14,9 +14,8 @@ function AuthLayout({ children }: { children: ReactNode }) {
           alt=""
         />
       </figure>
-      <section className="bg-light-800 dark:bg-dark-200 dark:border-dark-300 shadow-[0 29px 59px 0 rgba(0, 0, 0, 0.16)] rounded-[0.625rem] border border-transparent px-8 py-10">
-        {children}
-      </section>
+
+      {children}
     </main>
   );
 }
