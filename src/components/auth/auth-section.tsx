@@ -2,6 +2,14 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 import SocialAuthForm from "@/components/forms/social-auth";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardAction,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
 
 type AuthSectionProps = {
   children: ReactNode;
@@ -10,27 +18,33 @@ type AuthSectionProps = {
 
 function AuthSection({ children, title }: AuthSectionProps) {
   return (
-    <section className="bg-light-800 dark:bg-dark-200 dark:border-dark-300 shadow-[0 29px 59px 0 rgba(0, 0, 0, 0.16)] w-[min(32.5rem,100%)] rounded-[0.625rem] border border-transparent px-8 py-10">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h1 className="heading-h2 heading-color-primary font-bold max-sm:mb-1 sm:mb-2.5">
-            {title}
-          </h1>
-          <p className="">to continue to DevFlow</p>
-        </div>
+    <section className="w-[min(32.5rem,100%)]">
+      <Card className="bg-light-800 dark:bg-dark-200 dark:border-dark-300 rounded-[0.625rem] border-transparent py-10 shadow-[0_29px_59px_0_rgba(0,0,0,0.16)]">
+        <CardHeader className="px-8 max-sm:gap-1">
+          <CardTitle>
+            <h1 className="heading-h2 heading-color-primary font-bold">{title}</h1>
+          </CardTitle>
 
-        <Image
-          className="max-sm:size-8"
-          src="/images/site-logo.svg"
-          width={50}
-          height={50}
-          alt="DevFlow Logo"
-          loading="eager"
-        />
-      </div>
-      {children}
+          <p>to continue to DevFlow</p>
 
-      <SocialAuthForm />
+          <CardAction>
+            <Image
+              className="max-sm:size-8"
+              src="/images/site-logo.svg"
+              width={50}
+              height={50}
+              alt="DevFlow Logo"
+              loading="eager"
+            />
+          </CardAction>
+        </CardHeader>
+
+        <CardContent className="px-8"> {children}</CardContent>
+
+        <CardFooter className="px-8">
+          <SocialAuthForm className="flex-1" />
+        </CardFooter>
+      </Card>
     </section>
   );
 }

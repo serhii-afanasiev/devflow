@@ -42,7 +42,7 @@
 
   /* text letter-spacing */
   --tracking-tighter: 0.03em;
-
+  --text-base--line-height: 1.4;
 }
 
 /* ShadCN theme */
