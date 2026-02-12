@@ -10,6 +10,16 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
+  html {
+    line-height: 1.4;
+
+    @apply body-color;
+  }
+
+  a, button:not([disabled]) {
+    cursor: pointer;
+  }
+
   img, svg, video, canvas, audio, iframe, embed, object {
     display: inline-block;
     vertical-align: middle;

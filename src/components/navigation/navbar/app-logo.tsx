@@ -13,7 +13,7 @@ export default function AppLogo() {
       />
       <p className="heading-h2 max-sm:hidden">
         <span className="text-dark-100 dark:text-light-900">Dev</span>
-        <span className="text-primary-500 font-medium">Overflow</span>
+        <span className="text-primary font-medium">Overflow</span>
       </p>
     </>
   );

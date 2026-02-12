@@ -1,3 +1,11 @@
 @utility flex-between {
   @apply flex justify-between items-center;
 }
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility invert-colors {
+  @apply invert dark:invert-0;
+}
