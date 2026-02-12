@@ -21,3 +21,10 @@
 @utility border-light {
   @apply border-light-border;
 }
+
+@utility styled-link {
+  color: transparent;
+  background-image: var(--acent-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

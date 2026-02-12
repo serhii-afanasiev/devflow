@@ -18,9 +18,9 @@ export default function ThemeChanger() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Sun className="text-primary-500 fill-primary-500 size-5 scale-100 rotate-0 dark:scale-0 dark:-rotate-90" />
+          <Sun className="text-primary fill-primary size-5 scale-100 rotate-0 dark:scale-0 dark:-rotate-90" />
           <svg
-            className="text-primary-500 fill-primary-500 absolute size-5 scale-0 transition-all dark:scale-100"
+            className="text-primary fill-primary absolute size-5 scale-0 transition-all dark:scale-100"
             width="20"
             height="20"
             viewBox="0 0 20 20"

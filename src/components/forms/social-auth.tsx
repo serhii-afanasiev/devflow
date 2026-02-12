@@ -6,8 +6,9 @@ import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
+import { cn } from "@/lib/utils";
 
-function SocialAuthForm() {
+function SocialAuthForm({ className }: { className?: string }) {
   const btnClasses = "max-sm:px-3.5 sm:flex-1";
 
   //todo: Additional error handling after callback redirect from providers.
@@ -26,7 +27,7 @@ function SocialAuthForm() {
   };
 
   return (
-    <div className="mt-9 flex flex-wrap gap-2.5 max-sm:justify-center">
+    <div className={cn("flex flex-wrap gap-2.5 max-sm:justify-center", className)}>
       <Button
         variant="social"
         size="lg"

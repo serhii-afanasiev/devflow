@@ -19,8 +19,8 @@ type AuthSectionProps = {
 function AuthSection({ children, title }: AuthSectionProps) {
   return (
     <section className="w-[min(32.5rem,100%)]">
-      <Card className="bg-light-800 dark:bg-dark-200 dark:border-dark-300 rounded-[0.625rem] border-transparent py-10 shadow-[0_29px_59px_0_rgba(0,0,0,0.16)]">
-        <CardHeader className="px-8 max-sm:gap-1">
+      <Card className="bg-light-800 dark:bg-dark-200 dark:border-dark-300 rounded-[0.625rem] border-transparent shadow-[0_29px_59px_0_rgba(0,0,0,0.16)] max-sm:gap-6 max-sm:py-6 sm:gap-10 sm:py-10">
+        <CardHeader className="max-sm:gap-1 max-sm:px-6 sm:px-8">
           <CardTitle>
             <h1 className="heading-h2 heading-color-primary font-bold">{title}</h1>
           </CardTitle>
@@ -39,9 +39,9 @@ function AuthSection({ children, title }: AuthSectionProps) {
           </CardAction>
         </CardHeader>
 
-        <CardContent className="px-8"> {children}</CardContent>
+        <CardContent className="max-sm:px-6 sm:px-8"> {children}</CardContent>
 
-        <CardFooter className="px-8">
+        <CardFooter className="max-sm:px-6 sm:px-8">
           <SocialAuthForm className="flex-1" />
         </CardFooter>
       </Card>
