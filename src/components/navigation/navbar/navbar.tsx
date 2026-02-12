@@ -5,15 +5,17 @@ import ThemeChanger from "@/components/navigation/navbar/theme-changer";
 
 function Navbar() {
   return (
-    <nav className="flex-between bg-navbar shadow-light-200 border-light-border sticky top-0 z-50 gap-5 border-b max-sm:p-2 sm:py-5.5 sm:pr-12.5 sm:pl-7.5 dark:shadow-none">
-      <Link href="/" className="flex-between gap-1 max-sm:p-2">
-        <AppLogo />
-      </Link>
+    <header className="sticky top-0 z-50">
+      <nav className="flex-between bg-navbar shadow-light-200 border-light-border gap-5 border-b max-sm:p-2 sm:py-5.5 sm:pr-12.5 sm:pl-7.5 dark:shadow-none">
+        <Link href="/" className="flex-between gap-1 max-sm:p-2">
+          <AppLogo />
+        </Link>
 
-      <div>Global Search</div>
+        <div>Global Search</div>
 
-      <ThemeChanger />
-    </nav>
+        <ThemeChanger />
+      </nav>
+    </header>
   );
 }
 

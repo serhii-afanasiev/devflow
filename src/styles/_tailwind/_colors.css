@@ -1,3 +1,15 @@
+@utility heading-color-primary {
+  @apply text-dark-100 dark:text-light-900;
+}
+
+@utility heading-color-secondary {
+  @apply text-dark-200 dark:text-light-900;
+}
+
+@utility body-color {
+  @apply text-dark-500 dark:text-light-700;
+}
+
 @utility bg-navbar {
   @apply bg-light-900 dark:bg-[#0f111780];
 }
@@ -8,4 +20,11 @@
 
 @utility border-light {
   @apply border-light-border;
+}
+
+@utility styled-link {
+  color: transparent;
+  background-image: var(--acent-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
